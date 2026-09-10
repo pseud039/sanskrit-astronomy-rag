@@ -1,0 +1,6 @@
+
+pandas
+torch
+rank-bm25
+sentence-transformers
+streamlit
