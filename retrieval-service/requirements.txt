@@ -1,6 +1,7 @@
-
 pandas
 torch
 rank-bm25
 sentence-transformers
+fastapi
+uvicorn
 streamlit
