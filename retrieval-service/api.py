@@ -1,16 +1,22 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from retrieval import bm25_search, semantic_search  # imports from P3's file
+_retrieval = {}
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    import retrieval  # heavy work happens here — AFTER the port is already open
+    _retrieval["bm25_search"] = retrieval.bm25_search
+    _retrieval["semantic_search"] = retrieval.semantic_search
+    yield
 
-# Required — browsers block cross-origin requests from your Next.js
-# frontend unless the API explicitly allows it
+app = FastAPI(lifespan=lifespan)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # tighten to your actual frontend URL before deploying
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -23,14 +29,14 @@ class SearchRequest(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    ready = "bm25_search" in _retrieval
+    return {"status": "ok" if ready else "warming up"}
 
 
 @app.post("/search")
 def search(request: SearchRequest):
-    bm25_results = bm25_search(request.query, request.top_k)
-    semantic_results = semantic_search(request.query, request.top_k)
-
+    bm25_results = _retrieval["bm25_search"](request.query, request.top_k)
+    semantic_results = _retrieval["semantic_search"](request.query, request.top_k)
     return {
         "query": request.query,
         "bm25": bm25_results.to_dict(orient="records"),
