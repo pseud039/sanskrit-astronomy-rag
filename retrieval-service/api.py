@@ -1,3 +1,4 @@
+import asyncio
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -5,9 +6,13 @@ from pydantic import BaseModel
 
 _retrieval = {}
 
+def _load_retrieval():
+    import retrieval
+    return retrieval
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    import retrieval  # heavy work happens here — AFTER the port is already open
+    retrieval = await asyncio.to_thread(_load_retrieval)  # <-- runs in a worker thread, event loop stays free
     _retrieval["bm25_search"] = retrieval.bm25_search
     _retrieval["semantic_search"] = retrieval.semantic_search
     yield
