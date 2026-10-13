@@ -149,7 +149,14 @@ def main():
     half = F.chapters.map(lambda c: int(c.split('|')[0])) <= 3
     L.append(f'- [ ] P1: entries whose first evidence chapter is 1–3 ({int(half.sum())} entries)')
     L.append(f'- [ ] P2: entries whose first evidence chapter is 4–14 ({int((~half).sum())} entries)')
-    open(f'{OUT}/glossary_agreement_log.md', 'w').write('\n'.join(L) + '\n')
+    # open(f'{OUT}/glossary_agreement_log.md', 'w').write('\n'.join(L) + '\n')
+    with open(
+    f'{OUT}/glossary_agreement_log.md',
+    'w',
+    encoding='utf-8'
+) as f:
+    f.write('\n'.join(L) + '\n')
+    
 
     man = dict(version=VERSION, frozen_file=os.path.basename(frozen), sha256=sha(frozen), entries=len(F),
                inputs={os.path.basename(p): sha(p) for p in [f'{GD}/ss_glossary_clean.csv', f'{GD}/glossary_meta_DRAFT.csv',
