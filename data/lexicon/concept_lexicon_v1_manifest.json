@@ -1,0 +1,15 @@
+{
+ "version": "v1.0",
+ "frozen_file": "concept_lexicon_v1_FROZEN.csv",
+ "sha256": "cd67ee207df5850200398ffff220c2f02763e3ebac3c167c49390a0b6b9626d7",
+ "concepts": 58,
+ "aliases": 322,
+ "text_terms_active": 336,
+ "text_terms_dropped": 28,
+ "inputs": {
+  "concept_lexicon_v1.csv": "c60429b563558c3236925050a19bb0ad178ebb6e65e39f7cf5831ceea84433ee",
+  "ss_corpus_cleaned.csv": "be1f2433a4c2a659b2561bf1723b61a661a0ad6be61edbe282fb785d005ca23e",
+  "ss_glossary_clean.csv": "83524a5840cf2183d6557b500fc3c0049b0eff876b3922c0c4aa4656157587e5"
+ },
+ "protocol": "Authored without reference to benchmark failures. Question texts the author had seen before freezing are listed in data/benchmark/seen_by_lexicon_author.txt and are excluded from the headline test metrics."
+}

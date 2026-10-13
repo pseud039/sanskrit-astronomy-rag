@@ -174,12 +174,31 @@ Known issues are flagged for v1.1 rather than edited: the `aksha` variants `lamb
 ### App (portal)
 
 ```bash
-cd app && pip install -r requirements.txt && ANTHROPIC_API_KEY=... streamlit run app.py
-python3 tests.py   # generation/citation validation + abstention gate checks
+cd app && pip install -r requirements.txt && streamlit run app.py   # see app/README.md for LLM + deployment settings
+python3 tests.py
 ```
 
-Without a key, the app falls back to showing the top retrieved verse. To deploy to Hugging Face Spaces, push `app/` and add `ANTHROPIC_API_KEY` as a Space secret.
+Answer generation works with **any LLM over HTTP**: local or hosted **Ollama**, or any OpenAI-compatible endpoint (Groq, OpenRouter, Hugging Face router, vLLM). No vendor SDK is involved. Configure it with `LLM_PROVIDER` / `LLM_BASE_URL` / `LLM_MODEL` / `LLM_API_KEY`. When no LLM is configured, or a call fails, the app says so explicitly instead of silently falling back.
 `retrieval-service/` is the earlier Phase 0 FastAPI search skeleton (40-verse initial corpus).
+
+---
+
+# Concept lexicon + benchmark (v1)
+
+| file | what it is |
+|---|---|
+| `data/lexicon/concept_lexicon_v1_FROZEN.csv` | 58 concepts mapping **modern phrasings** (e.g. "apparent shift", "observer's position") to the text's own terms ("parallax", "lambana", "avanati"). Built from the glossary, the corpus's "English (sanskrit)" parentheticals, and standard astronomy vocabulary, without using benchmark questions. Terms the corpus never prints are dropped (corpus check only) |
+| `data/benchmark/splits_v1.csv` | Dev/test split, grouped by chapter (dev = chapters 1, 2, 5, 6, 7), frozen before any tuning |
+| `data/benchmark/seen_by_lexicon_author.txt` | Questions whose wording the lexicon author had seen; excluded from the headline numbers |
+| `experiments/results/benchmark_v1.md` | Results: R@5 / R@10 / MRR / nDCG@10 with 95% CIs, paired tests vs BM25, abstention gate |
+
+```bash
+python3 src/lexicon/freeze_lexicon.py       # freeze lexicon (+ manifest)
+python3 src/evaluation/make_splits.py       # freeze dev/test split
+python3 src/evaluation/run_benchmark.py     # add --dense / --rerank with sentence-transformers installed
+```
+
+**Current result (lexical retrieval only):** the lexicon raises concept coverage from 41% to 65% of questions. On the held-out test split (unseen questions, n = 53), expansion does **not** beat BM25 (ΔMRR −0.012, 95% CI [−0.039, +0.007]). The abstention gate is chosen on dev: raw BM25 top-1 ≥ 17.25 refuses 6/6 unanswerable and 8/61 answerable test questions. Dense, hybrid and rerank numbers still have to be produced on a machine with Hugging Face access.
 
 ---
 
@@ -667,7 +686,8 @@ Current stage:
 * [ ] Baseline retrieval
 * [ ] Concept-aware retrieval
 * [ ] Ablation experiments
-* [x] RAG integration (Streamlit app in `app/`)
+* [x] RAG integration (Streamlit app in `app/`; any Ollama / OpenAI-compatible LLM)
+* [x] Concept lexicon v1 + dev/test split + lexical benchmark run
 * [ ] GenAI evaluation
 * [ ] Final experiments
 * [ ] Research paper

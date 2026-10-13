@@ -1,0 +1,3 @@
+# Full install (Hugging Face Spaces / a machine with >= 2 GB RAM): adds dense retrieval + cross-encoder reranking
+-r requirements.txt
+sentence-transformers>=3.0
