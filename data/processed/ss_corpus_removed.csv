@@ -1,0 +1,74 @@
+verse_id,role,reason
+1.5,missing,no English text (OCR/boundary failure)
+1.8,missing,no English text (OCR/boundary failure)
+1.25,missing,no English text (OCR/boundary failure)
+1.39,missing,no English text (OCR/boundary failure)
+1.53,missing,no English text (OCR/boundary failure)
+1.67,missing,no English text (OCR/boundary failure)
+1.70,missing,no English text (OCR/boundary failure)
+2.10,missing,no English text (OCR/boundary failure)
+2.11,missing,no English text (OCR/boundary failure)
+2.26,missing,no English text (OCR/boundary failure)
+2.28,missing,no English text (OCR/boundary failure)
+2.45,missing,no English text (OCR/boundary failure)
+2.47,missing,no English text (OCR/boundary failure)
+2.49,missing,no English text (OCR/boundary failure)
+2.51,missing,no English text (OCR/boundary failure)
+2.54,missing,no English text (OCR/boundary failure)
+2.55,missing,no English text (OCR/boundary failure)
+2.59,missing,no English text (OCR/boundary failure)
+2.61,missing,no English text (OCR/boundary failure)
+2.64,missing,no English text (OCR/boundary failure)
+2.69,distractor,garbled English fragment
+3.9,missing,no English text (OCR/boundary failure)
+3.11,missing,no English text (OCR/boundary failure)
+3.19,missing,no English text (OCR/boundary failure)
+3.24,missing,no English text (OCR/boundary failure)
+3.26,missing,no English text (OCR/boundary failure)
+3.27,distractor,garbled English fragment
+3.29,missing,no English text (OCR/boundary failure)
+3.30,missing,no English text (OCR/boundary failure)
+3.35,missing,no English text (OCR/boundary failure)
+3.36,missing,no English text (OCR/boundary failure)
+3.37,missing,no English text (OCR/boundary failure)
+3.45,missing,no English text (OCR/boundary failure)
+3.47,missing,no English text (OCR/boundary failure)
+3.49,missing,no English text (OCR/boundary failure)
+4.3,missing,no English text (OCR/boundary failure)
+4.6,missing,no English text (OCR/boundary failure)
+4.14,missing,no English text (OCR/boundary failure)
+4.16,missing,no English text (OCR/boundary failure)
+5.2,missing,no English text (OCR/boundary failure)
+5.14,missing,no English text (OCR/boundary failure)
+6.16,missing,no English text (OCR/boundary failure)
+7.23,missing,no English text (OCR/boundary failure)
+8.6,distractor,garbled English fragment
+8.7,distractor,garbled English fragment
+8.8,distractor,garbled English fragment
+8.9,distractor,garbled English fragment
+8.10,distractor,garbled English fragment
+8.11,distractor,garbled English fragment
+8.12,distractor,garbled English fragment
+8.13,distractor,garbled English fragment
+8.14,distractor,garbled English fragment
+8.15,distractor,garbled English fragment
+8.16,distractor,garbled English fragment
+8.17,distractor,garbled English fragment
+8.18,distractor,garbled English fragment
+8.19,distractor,garbled English fragment
+8.20,distractor,garbled English fragment
+8.21,distractor,garbled English fragment
+9.17,missing,no English text (OCR/boundary failure)
+10.7,missing,no English text (OCR/boundary failure)
+11.1,missing,no English text (OCR/boundary failure)
+11.6,missing,no English text (OCR/boundary failure)
+11.15,missing,no English text (OCR/boundary failure)
+12.28,missing,no English text (OCR/boundary failure)
+12.42,missing,no English text (OCR/boundary failure)
+12.61,missing,no English text (OCR/boundary failure)
+12.64,missing,no English text (OCR/boundary failure)
+12.65,missing,no English text (OCR/boundary failure)
+12.72,missing,no English text (OCR/boundary failure)
+12.81,missing,no English text (OCR/boundary failure)
+12.88,missing,no English text (OCR/boundary failure)
+13.6,missing,no English text (OCR/boundary failure)

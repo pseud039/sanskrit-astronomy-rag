@@ -1,0 +1,58 @@
+sanskrit_term,n_evidence,n_primary_gloss_adjacent,n_any_gloss_adjacent,confidence_draft,mapping_type_draft,mapping_basis,verified_by_human
+ahankara,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+aksha,5,1,5,Medium,componential,multi-word primary gloss,NO
+angula,4,3,4,High,one_to_many,other_glosses present,NO
+apakrama,2,2,2,High,many_to_one,primary gloss shared with: kranti,NO
+asta,2,2,2,High,one_to_many,other_glosses present,NO
+asura,2,2,2,High,one_to_many,other_glosses present,NO
+avanati,2,2,2,High,componential,multi-word primary gloss,NO
+ayana,6,4,5,Medium,one_to_many,other_glosses present,NO
+bhacakra,2,0,2,Medium,componential,multi-word primary gloss,NO
+bhagana,5,1,3,Low,one_to_many,other_glosses present,NO
+bhoga,4,4,4,High,one_to_many,other_glosses present,NO
+bhuja,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+brahman,3,1,2,Medium,one_to_many,other_glosses present,NO
+chedyaka,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+cighra,3,3,3,High,many_to_one,primary gloss shared with: cighrocca|samagama|yoga,NO
+cighrocca,3,3,3,High,many_to_one,primary gloss shared with: cighra|samagama|yoga,NO
+dhana,3,2,3,Medium,one_to_many,other_glosses present,NO
+dhruva,4,1,2,Low,one_to_many,other_glosses present,NO
+ganku,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+grasa,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+guru,3,2,3,Medium,one_to_many,other_glosses present,NO
+hora,2,2,2,High,one_to_many,other_glosses present,NO
+kaksha,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+kendra,3,1,3,Medium,one_to_many,other_glosses present,NO
+koti,3,3,3,High,direct_equivalence,"single gloss, no other senses",NO
+kranti,2,2,2,High,many_to_one,primary gloss shared with: apakrama,NO
+kshitija,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+lagna,6,2,6,Medium,componential,multi-word primary gloss,NO
+madhya,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+mana,6,2,6,Medium,one_to_many,other_glosses present,NO
+manda,2,2,2,High,many_to_one,primary gloss shared with: mandocca|ucca,NO
+mandocca,4,3,4,High,many_to_one,primary gloss shared with: manda|ucca,NO
+manu,2,2,2,High,one_to_many,other_glosses present,NO
+manvantara,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+nakshatra,3,3,3,High,one_to_many,other_glosses present,NO
+pada,2,1,2,Medium,one_to_many,other_glosses present,NO
+pata,5,1,4,Medium,one_to_many,other_glosses present,NO
+pravaha,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+samagama,2,2,2,High,many_to_one,primary gloss shared with: cighra|cighrocca|yoga,NO
+samasa,2,0,1,Low,componential,multi-word primary gloss,NO
+sankranti,4,1,4,Medium,componential,multi-word primary gloss,NO
+saura,3,3,3,High,direct_equivalence,"single gloss, no other senses",NO
+savana,2,2,2,High,one_to_many,other_glosses present,NO
+siddha,3,3,3,High,direct_equivalence,"single gloss, no other senses",NO
+sphuta,5,3,5,Medium,one_to_many,other_glosses present,NO
+sthiti,3,3,3,High,one_to_many,other_glosses present,NO
+sura,2,2,2,High,one_to_many,other_glosses present,NO
+tamas,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+ucca,6,3,6,Medium,many_to_one,primary gloss shared with: manda|mandocca,NO
+unnata,3,2,3,Medium,one_to_many,other_glosses present,NO
+valana,5,5,5,High,direct_equivalence,"single gloss, no other senses",NO
+veda,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+vikala,2,2,2,High,one_to_many,other_glosses present,NO
+vishuvat,4,3,4,High,one_to_many,other_glosses present,NO
+yoga,3,3,3,High,many_to_one,primary gloss shared with: cighra|cighrocca|samagama,NO
+yuddha,2,2,2,High,direct_equivalence,"single gloss, no other senses",NO
+yuga,2,1,1,Low,one_to_many,other_glosses present,NO

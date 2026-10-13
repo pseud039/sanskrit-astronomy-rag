@@ -1,0 +1,28 @@
+{
+ "version": "v1.0",
+ "frozen_file": "glossary_v1.0_FROZEN.csv",
+ "sha256": "75f4556f4b7d3a1e118cf23640699738df5edc4a90cf5ddacc7512a84d720d7f",
+ "entries": 57,
+ "inputs": {
+  "ss_glossary_clean.csv": "83524a5840cf2183d6557b500fc3c0049b0eff876b3922c0c4aa4656157587e5",
+  "glossary_meta_DRAFT.csv": "8e184a4c1dbcc7f7c4a438e8bd8cf18e8d286294e3569ff0b4887ba8327bc7d1",
+  "glossary_review_v1.csv": "cb6c27896b25a33f2a37a42687a2e8b146bdf8266f66ac513067b7d610c57d63",
+  "spotcheck_precheck.csv": "8f762488d9453b5ac516257d60101865b857c5a1f38bc9c786c346a909dc1809",
+  "ss_corpus_cleaned.csv": "be1f2433a4c2a659b2561bf1723b61a661a0ad6be61edbe282fb785d005ca23e"
+ },
+ "attestation": "170/170",
+ "spotcheck": {
+  "entries": 18,
+  "entry_agreement": 0.889,
+  "verse_agreement": 0.871,
+  "precheck_vs_reviewer_kappa": 0.114
+ },
+ "review": {
+  "mapping_rule_vs_review_kappa": 0.403,
+  "confidence_overrides": 3
+ },
+ "v1_1_flags": [
+  "aksha",
+  "yuga"
+ ]
+}

@@ -1,0 +1,58 @@
+sanskrit_term,concept_category,mapping_type,mapping_type_secondary,confidence_override,review_note
+ahankara,cosmology_philosophy,no_equivalent,,,Cosmogonic/philosophical principle (Samkhya); no astronomical counterpart.
+aksha,spherical_astronomy,direct_equivalence,many_to_one,Low,"aksha = terrestrial latitude. Draft 'componential' came only from the two-word gloss. FLAG for v1.1: variants lamba/lambaka are CO-latitude, as the corpus itself shows at 3.14 'co-latitude (lamba) and of latitude (aksha)' and 12.44 'co-latitude (lambaka)'. They are kept only because the glossary is frozen."
+angula,units_measurement,one_to_many,,,Two distinct senses: a linear unit (digit / finger-breadth) and graduated divisions on an instrument.
+apakrama,spherical_astronomy,many_to_one,,,apakrama and kranti both map to declination.
+asta,phenomena_visibility,one_to_many,,,'setting' and the narrower 'heliacal setting' are both cited senses.
+asura,cosmology_philosophy,no_equivalent,,,Mythological being; no astronomical counterpart.
+avanati,eclipses_parallax,componential,,,Parallax resolved into its latitude component (the longitude component is lambana).
+ayana,spherical_astronomy,one_to_many,,,"Solstice, the sun's northward/southward progress, and precession (ayanamsa) are all cited senses. Reviewer S proposed 'precession' as the primary gloss; adjudicated KEEP 'solstice' as primary (4 of 6 verses print solstice), with precession kept in other_glosses."
+bhacakra,spherical_astronomy,componential,many_to_one,,bha (asterism) + cakra (circle) = circle of asterisms (ecliptic band). It overlaps with bhagana's 'circle of constellations' sense.
+bhagana,planetary_theory,one_to_many,,,Revolution count vs circle of constellations/zodiac; senses depend on context.
+bhoga,calendrics,conceptual_restructuring,,,"Arc 'portion' of an asterism (nakshatra division of 800'); there is no modern unit for it, and 'portion' is Burgess's generic rendering. Draft 'one_to_many' came only from the plural 'portions'."
+bhuja,mathematics_geometry,direct_equivalence,,,Base (side) of a right triangle; a single sense.
+brahman,cosmology_philosophy,no_equivalent,,,Religious/metaphysical concept.
+chedyaka,eclipses_parallax,direct_equivalence,,,Projection (diagram) of an eclipse.
+cighra,planetary_theory,conceptual_restructuring,many_to_one,,"sighra (the 'swift' epicycle/conjunction) models synodic anomaly, which modern astronomy explains by heliocentric geometry. 'Conjunction' is shared with cighrocca, samagama and yoga."
+cighrocca,planetary_theory,conceptual_restructuring,many_to_one,,"Conjunction-apex of the sighra epicycle, listed separately from mandocca and pata in the source. It belongs to the epicyclic model, so it has no direct modern counterpart."
+dhana,mathematics_geometry,direct_equivalence,,,Additive (+) in a correction; 'excess' and 'additive' are the same sense. Draft 'one_to_many' came from the row's shape.
+dhruva,spherical_astronomy,one_to_many,,,"Fixed (karanas), polar longitude, pole and pole-star are distinct context-dependent senses."
+ganku,instruments,direct_equivalence,,,Gnomon (sanku); the 'ganku' form is OCR for c-cedilla.
+grasa,eclipses_parallax,direct_equivalence,,,Obscuration (eclipsed amount).
+guru,cosmology_philosophy,one_to_many,,,"preceptor/master in the cited verses; guru also names Jupiter elsewhere in the tradition, so expansions are ambiguous."
+hora,units_measurement,direct_equivalence,,,Hour. Draft 'one_to_many' came only from the plural. (The hora = half-sign sense is not cited here.)
+kaksha,planetary_theory,direct_equivalence,,,Orbit.
+kendra,planetary_theory,one_to_many,,,"Anomaly, distance and commutation are cited senses."
+koti,mathematics_geometry,direct_equivalence,,,Perpendicular (upright side) of a right triangle.
+kranti,spherical_astronomy,many_to_one,,,kranti and apakrama both map to declination.
+kshitija,spherical_astronomy,direct_equivalence,,,Horizon.
+lagna,spherical_astronomy,componential,,,"Orient ecliptic-point: the point of the ecliptic on the eastern horizon (ascendant), composed from the ecliptic and the horizon."
+madhya,spherical_astronomy,one_to_many,,Medium,"Cited verses use 'meridian', but madhya is overwhelmingly 'mean' (madhyama graha) in planetary theory. Confidence lowered because expansion risks pulling in mean-motion verses."
+mana,units_measurement,one_to_many,,,Measure / dimensions / the modes of measuring time.
+manda,planetary_theory,conceptual_restructuring,many_to_one,,"Slow (manda) epicycle apsis, an epicyclic model of the equation of centre. 'Apsis' is shared with mandocca and ucca."
+mandocca,planetary_theory,conceptual_restructuring,many_to_one,,Apex of the manda epicycle. It corresponds to apsis/apogee but sits inside an epicyclic model. Draft 'many_to_one' kept as the secondary type.
+manu,cosmology_philosophy,no_equivalent,,,Mythological patriarch.
+manvantara,cosmology_philosophy,no_equivalent,,,Cosmological time cycle (age of a Manu); no astronomical counterpart.
+nakshatra,calendrics,conceptual_restructuring,,,Lunar mansion: both a star group and a fixed 13°20' ecliptic division. Modern 'asterism' covers only the first. Draft 'one_to_many' came only from the plural.
+pada,calendrics,one_to_many,,,Quadrant vs fourth part/quarter (e.g. of an asterism).
+pata,planetary_theory,one_to_many,,,Node (1.33) vs astronomical aspect (ch. 11); compound-specific 'fault' at 11.4.
+pravaha,cosmology_philosophy,conceptual_restructuring,,,"Provector: a cosmic wind that drives diurnal motion. The phenomenon (diurnal rotation) is real, but the causal model differs completely."
+samagama,planetary_theory,many_to_one,,,Conjunction; shared with cighra/cighrocca/yoga.
+samasa,eclipses_parallax,componential,,,Aggregate circle (radius = half the sum of the eclipsed and eclipsing diameters).
+sankranti,calendrics,componential,,,Entrance into a sign (ingress): entrance + sign.
+saura,calendrics,direct_equivalence,,,Solar (time measure).
+savana,calendrics,direct_equivalence,,,Civil (sunrise-to-sunrise) day. Draft 'one_to_many' came only from 'civil days'. Note: the modern civil day starts at midnight.
+siddha,cosmology_philosophy,no_equivalent,,,Perfected beings (mythological).
+sphuta,planetary_theory,direct_equivalence,,,"True/corrected (vs mean) position. 'corrected', 'true' and 'precise' are translation variants of a single sense."
+sthiti,eclipses_parallax,direct_equivalence,,,(Half-)duration of an eclipse.
+sura,cosmology_philosophy,no_equivalent,,,Gods (mythological).
+tamas,eclipses_parallax,conceptual_restructuring,,,"'Darkness' = the eclipsing shadow (umbra), framed as darkness and not as a geometric shadow cone."
+ucca,planetary_theory,conceptual_restructuring,many_to_one,,Apsis/apex of an epicycle (epicyclic model); shared 'apsis' with manda/mandocca.
+unnata,spherical_astronomy,one_to_many,,,Altitude (in time) vs elevated/erect (instrumental sense).
+valana,eclipses_parallax,conceptual_restructuring,,,"'Deflection' of the ecliptic from the east-west line at the eclipsed body. It is used for drawing eclipse projections, and Burgess's term has no exact modern counterpart."
+veda,cosmology_philosophy,no_equivalent,,,Scripture.
+vikala,units_measurement,direct_equivalence,,,Second (of arc). Draft 'one_to_many' came only from plural/filler forms.
+vishuvat,spherical_astronomy,one_to_many,,,Equinox vs equator (context-dependent).
+yoga,calendrics,many_to_one,one_to_many,Medium,"Conjunction (shared with cighra/cighrocca/samagama); yoga is ALSO the calendrical yoga (sum of solar and lunar longitudes, 2.65). Confidence lowered for that ambiguity."
+yuddha,planetary_theory,conceptual_restructuring,,,"Planetary 'war' = close conjunction/appulse of two planets, framed as a combat."
+yuga,cosmology_philosophy,one_to_many,no_equivalent,,"Cosmological age (13.18 prints 'successive age (yuga)'). Reviewer S proposed 'epoch' and is CORRECT for 1.56, which prints 'any epoch (yuga)'. The glossary note 'epoch unsupported' is wrong for that verse. Glossary frozen, so no edit: FLAG for v1.1 (add 'epoch' to other_glosses). Confidence stays Low."

@@ -148,6 +148,41 @@ The categories will not rely solely on subjective labeling. Lexical/semantic ove
 
 ---
 
+# Phase 1 — Glossary (complete)
+
+| file | what it is |
+|---|---|
+| `data/glossary/glossary_v1.0_FROZEN.csv` | **The frozen glossary.** 57 entries: concept, Sanskrit term, variants, evidence verses + snippet, concept category, confidence (High/Medium/Low) with its basis, mapping type (+ secondary), attestation result, spot-check result |
+| `data/glossary/glossary_agreement_log.md` | Verification & agreement log: 170/170 evidence citations attested; spot-check covers 18/57 entries (32%), 88.9% entry-level / 87.1% verse-level agreement; adjudicated disagreements; mapping-type review; v1.1 flags; P1/P2 sign-off |
+| `data/glossary/glossary_v1.0_manifest.json` | SHA-256 of the frozen file and of every input |
+| `data/glossary/ss_glossary_clean.csv` | Curated candidate glossary (terms, glosses, evidence). Never edited |
+| `data/glossary/glossary_review_v1.csv` | Reviewed concept category / mapping type / confidence overrides, with rationale |
+| `data/glossary/glossary_meta_DRAFT.csv`, `spotcheck_precheck.csv` | Rule-derived draft metadata and the reviewer's spot-check sheet |
+
+Rebuild (deterministic; refuses to freeze if any evidence verse does not print its term):
+
+```bash
+pip install pandas numpy rank-bm25
+python3 src/glossary/freeze_glossary.py              # -> glossary_v1.0_FROZEN.csv + agreement log + manifest
+python3 src/glossary/build_leakage_table.py          # -> data/benchmark/ss_questions_leakage.csv
+python3 experiments/glossary_expansion/smoke_test.py # BM25 ± glossary expansion under leakage control
+```
+
+Mapping-type typology: `direct_equivalence`, `one_to_many`, `many_to_one`, `componential`, `conceptual_restructuring`, `no_equivalent`.
+Known issues are flagged for v1.1 rather than edited: the `aksha` variants `lamba`/`lambaka` mean co-latitude, and `yuga` = "epoch" at 1.56.
+
+### App (portal)
+
+```bash
+cd app && pip install -r requirements.txt && ANTHROPIC_API_KEY=... streamlit run app.py
+python3 tests.py   # generation/citation validation + abstention gate checks
+```
+
+Without a key, the app falls back to showing the top retrieved verse. To deploy to Hugging Face Spaces, push `app/` and add `ANTHROPIC_API_KEY` as a Space secret.
+`retrieval-service/` is the earlier Phase 0 FastAPI search skeleton (40-verse initial corpus).
+
+---
+
 # System Architecture
 
 ## 1. Corpus Processing
@@ -625,14 +660,14 @@ All team members contribute to evaluation, analysis, documentation, and the rese
 Current stage:
 
 * [ ] Literature review
-* [ ] Corpus collection
-* [ ] Corpus preprocessing
-* [ ] Terminology glossary
-* [ ] Benchmark construction
+* [x] Corpus collection
+* [x] Corpus preprocessing (427 gold-eligible verses, `data/processed/`)
+* [x] Terminology glossary — **Phase 1 complete: `glossary_v1.0_FROZEN.csv`** (pending P1/P2 sign-off, see agreement log)
+* [ ] Benchmark construction (103 answerable + 12 abstain questions drafted; leakage table built)
 * [ ] Baseline retrieval
 * [ ] Concept-aware retrieval
 * [ ] Ablation experiments
-* [ ] RAG integration
+* [x] RAG integration (Streamlit app in `app/`)
 * [ ] GenAI evaluation
 * [ ] Final experiments
 * [ ] Research paper

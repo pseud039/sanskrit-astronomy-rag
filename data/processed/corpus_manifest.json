@@ -1,0 +1,35 @@
+{
+ "source": {
+  "file": "ss_corpus_all.csv",
+  "sha256": "b943dc0152c58356661e88396eace263eae0365c69f6cc2ea209cccd53ef2e49",
+  "rows": 500
+ },
+ "filtered": {
+  "file": "ss_corpus_filtered.csv",
+  "sha256": "03073fbbb5d3823c002a1cc1ce698e3b0e5b27352e9006eba2700fe8798ddb30",
+  "rows": 427,
+  "removed": 73
+ },
+ "cleaned": {
+  "file": "ss_corpus_cleaned.csv",
+  "sha256": "be1f2433a4c2a659b2561bf1723b61a661a0ad6be61edbe282fb785d005ca23e",
+  "rows": 427
+ },
+ "glossary_sha256": "83524a5840cf2183d6557b500fc3c0049b0eff876b3922c0c4aa4656157587e5",
+ "cleaning": {
+  "rules": [
+   "strip \\x02 / _x0002_ artifacts",
+   "join \"xxx- yyy\" only if the joined word occurs elsewhere in corpus",
+   "collapse whitespace"
+  ],
+  "hyphen_joins": 29,
+  "rows_changed": 136,
+  "truncated_cap_rows": 9,
+  "note_suspect_rows": 27,
+  "known_limits": [
+   "English capped at 600 chars for long blocks (truncated_cap flag)",
+   "translator notes are flagged, not removed"
+  ]
+ },
+ "evidence_check_failures": []
+}

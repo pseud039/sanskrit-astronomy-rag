@@ -1,0 +1,116 @@
+qid,question,gold_verse,wording,type
+Q001,Who was the demon that wanted to learn the science of astronomy?,1.2,plain,answerable
+Q002,Who gave Maya the knowledge of the planetary system?,1.4,plain,answerable
+Q003,How did the Sun's representative address Maya after the Sun vanished?,1.7,verse,answerable
+Q004,How many days make up a year of the gods?,1.14,plain,answerable
+Q005,How many divine years make up one Mahayuga cycle of four ages?,1.15,plain,answerable
+Q006,How many ages make up a manvantara and what follows it?,1.18,verse,answerable
+Q007,How long did the creation of the world take according to the text?,1.24,plain,answerable
+Q008,How do you work out the number of extra (leap) months in a cycle?,1.35,plain,answerable
+Q009,How many months and days does the text say are omitted or added in an age?,1.38,plain,answerable
+Q010,What are the stated revolution counts of Jupiter's and Venus's slow points?,1.42,plain,answerable
+Q011,What is subtracted from the sum of the past ages to get the time elapsed since creation?,1.46,plain,answerable
+Q012,How is the earth's circumference calculated from its diameter?,1.59,plain,answerable
+Q013,What force pushes the planets toward their farthest points?,2.3,plain,answerable
+Q014,How does a planet's farthest point pull it forward or backward?,2.4,plain,answerable
+Q015,What are the names for forward and backward displacement of a planet caused by its apex?,2.5,plain,answerable
+Q016,What causes the north-south deviation of the moon and planets from the ecliptic?,2.6,plain,answerable
+Q017,"How many kinds of planetary motion are listed, and what is the first?",2.12,plain,answerable
+Q018,How is the first entry of the sine table defined?,2.15,plain,answerable
+Q019,How many entries does the sine table have?,2.16,plain,answerable
+Q020,What are the values of the epicycle at the end of even quadrants for Mars and the others?,2.36,plain,answerable
+Q021,How is the corrected epicycle computed from the base sine?,2.38,plain,answerable
+Q022,Why does a planet appear to move backward when far from its fast apex?,2.52,plain,answerable
+Q023,"How is the correction applied to the nodes of Mars, Jupiter and Saturn versus Mercury and Venus?",2.56,plain,answerable
+Q024,How do you calculate a planet's latitude north or south of the ecliptic?,2.57,plain,answerable
+Q025,How do you find the true angular distance of a planet from the equator when it is off the ecliptic?,2.58,plain,answerable
+Q026,How are the half-length of day and night found from the sun's declination?,2.62,plain,answerable
+Q027,"How are yogas, sun-moon combinations, found?",2.65,verse,answerable
+Q028,How do you mark east-west and the intermediate directions on the ground?,3.4,plain,answerable
+Q029,How is the angular distance of the sun from the zenith computed?,3.15,plain,answerable
+Q030,How is the sine of the sun's distance from the zenith obtained?,3.33,plain,answerable
+Q031,How are the times of rising of the signs found at the equator?,3.43,plain,answerable
+Q032,How do you find which point of the ecliptic is rising on the horizon?,3.48,plain,answerable
+Q033,How do you measure the time between two points of the ecliptic rising?,3.50,plain,answerable
+Q034,How is the corrected diameter of the earth's shadow calculated?,4.4,plain,answerable
+Q035,How do you compute the amount of an eclipse that is hidden at a given moment?,4.10,plain,answerable
+Q036,How is the true half-duration of a solar eclipse used to correct the perpendicular?,4.19,verse,answerable
+Q037,How is the amount of obscuration at a given time found using base and hypotenuse?,4.20,plain,answerable
+Q038,How is the deflection of the eclipse direction computed?,4.25,plain,answerable
+Q039,How do you find the rising point of the ecliptic at the moment of new moon for parallax?,5.3,plain,answerable
+Q040,How do you calculate the apparent shift in position of the sun and moon due to viewer location?,5.8,plain,answerable
+Q041,"In which direction is the vertical parallax, and how is it combined with the moon's latitude?",5.12,plain,answerable
+Q042,When is the parallax at contact greater than at the middle in the eastern sky?,5.15,verse,answerable
+Q043,How is the difference of parallax applied to the half-duration of an eclipse?,5.16,plain,answerable
+Q044,How do you mark the points where an eclipse begins and ends on a drawn diagram?,6.7,plain,answerable
+Q045,In which direction is the deflection drawn on the diagram for lunar versus solar eclipses?,6.9,plain,answerable
+Q046,How is the path of the eclipsing body drawn with two fish-figures?,6.15,verse,answerable
+Q047,Which way do you place the marker before versus after the middle of the eclipse?,6.18,plain,answerable
+Q048,How do you show the point where the eclipse ends on the diagram?,6.22,plain,answerable
+Q049,What divisor is used to find when two planets meet if one is moving backward?,7.4,plain,answerable
+Q050,How is the time until two planets reach equal longitude calculated?,7.6,plain,answerable
+Q051,How is the correction for latitude applied to a planet's apparent place?,7.10,plain,answerable
+Q052,For which purposes is the correction for apparent longitude first used?,7.11,plain,answerable
+Q053,What are the terms for different kinds of close approach of two planets?,7.22,plain,answerable
+Q054,Which planets set in the east and rise in the west when closer to the sun?,9.3,plain,answerable
+Q055,When do planets become visible or invisible near the sun?,9.9,plain,answerable
+Q056,How are the planets' daily motions converted to motions in time?,9.11,plain,answerable
+Q057,"At what angular distance from the sun do Svati, Agastya and others rise and set?",9.12,verse,answerable
+Q058,"At what distance from the sun are Krittika, Anuradha and Mula first seen?",9.14,verse,answerable
+Q059,How do you find the interval between the sun and moon for moonrise timing?,10.2,plain,answerable
+Q060,How is the moon's setting time after the sun determined in the bright half of the month?,10.4,plain,answerable
+Q061,How do you start drawing the diagram of the moon's phase?,10.10,plain,answerable
+Q062,How is the lit portion of the moon marked on the diagram?,10.12,plain,answerable
+Q063,How do you show the moon's raised horn in the drawing?,10.14,plain,answerable
+Q064,What is said to be the origin of the calamity-bringing fire when the sun and moon meet?,11.3,plain,answerable
+Q065,How is the correction for the moon's position applied once the event has passed?,11.10,plain,answerable
+Q066,How is half the duration of the sun-moon declination event computed?,11.14,plain,answerable
+Q067,How long does the inauspicious alignment last?,11.17,plain,answerable
+Q068,When can the alignment of sun and moon declination occur a second time?,11.19,plain,answerable
+Q069,When does the third vyatipata occur?,11.20,plain,answerable
+Q070,What questions does Maya ask about the shape and support of the earth?,12.2,plain,answerable
+Q071,Why are day and night of gods and demons opposite?,12.4,plain,answerable
+Q072,"Why is the sun hot in summer but not in winter, according to the questions posed?",12.8,plain,answerable
+Q073,What did the supreme being deposit in the waters he created?,12.13,plain,answerable
+Q074,What names is the sun given in scripture?,12.15,plain,answerable
+Q075,"What do the Hymns, Songs and Liturgy represent for the sun?",12.17,plain,answerable
+Q076,"Who was produced to create the animate world, and as what principle?",12.20,plain,answerable
+Q077,From what were Mars and the other planets produced?,12.24,plain,answerable
+Q078,Where does the earth stand within the cosmic egg?,12.32,plain,answerable
+Q079,What is Meru described as?,12.34,plain,answerable
+Q080,Where is the city of Lanka located?,12.39,plain,answerable
+Q081,Where are the two pole stars for people at the equator?,12.43,plain,answerable
+Q082,Why do people on the same diameter of the globe think each other upside down?,12.52,plain,answerable
+Q083,Why does the earth look flat to people standing on it?,12.54,plain,answerable
+Q084,How far from the equator is the sun invisible in the gods' hemisphere?,12.63,plain,answerable
+Q085,In which signs is the sun not visible in the hemisphere of the gods?,12.66,plain,answerable
+Q086,Over what fraction of the earth's circumference does the sun move directly overhead?,12.68,plain,answerable
+Q087,What drives the circle of stars to revolve forever?,12.73,plain,answerable
+Q088,Why does the moon complete many revolutions while Saturn completes few?,12.76,plain,answerable
+Q089,How is the lord of the day counted from Saturn?,12.78,plain,answerable
+Q090,What is the size of the orbit of the stars relative to the sun's circuit?,12.80,plain,answerable
+Q091,How is the diameter of a planet's orbit and its distance found?,12.84,plain,answerable
+Q092,What is the orbit size of the moon in yojanas?,12.85,plain,answerable
+Q093,What is the first step in building the model of the earth and stars?,13.3,plain,answerable
+Q094,Where are the solstices and equinoxes placed on the model?,13.10,plain,answerable
+Q095,How is the zodiac path fixed on the armillary hoops?,13.11,plain,answerable
+Q096,Why does the construction of the celestial sphere need to be passed on by a teacher?,13.18,plain,answerable
+Q097,How does the copper-vessel water clock work?,13.23,plain,answerable
+Q098,At which degrees of the zodiac do the four sign-boundary positions occur?,14.5,verse,answerable
+Q099,"What are the two entrances between the positions called, and what do they represent?",14.8,plain,answerable
+Q100,How many degrees of the moon's motion make up one lunar day?,14.12,plain,answerable
+Q101,"What is the sidereal day, and how are months named?",14.15,plain,answerable
+Q102,What did Maya feel after learning the divine knowledge from the sun?,14.25,plain,answerable
+Q103,What did the sages do on learning that Maya had received the gift?,14.26,plain,answerable
+Q104,Who built the first astronomical observatory in Greece?,,plain,abstain
+Q105,What is the speed of light according to the text?,,plain,abstain
+Q106,How many moons does Jupiter have?,,plain,abstain
+Q107,What was the exact date of composition of the treatise?,,plain,abstain
+Q108,What is the diameter of the sun in kilometres?,,plain,abstain
+Q109,Which king funded this treatise?,,plain,abstain
+Q110,How does the text describe the gravitational pull between planets?,,plain,abstain
+Q111,What material was used to write the original manuscript?,,plain,abstain
+Q112,What does the text say about the planet Uranus?,,plain,abstain
+Q113,How many stars are in the Milky Way?,,plain,abstain
+Q114,Who was the translator's teacher at Yale?,,plain,abstain
+Q115,What was the price of the printed book?,,plain,abstain

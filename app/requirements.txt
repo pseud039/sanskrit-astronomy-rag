@@ -1,0 +1,6 @@
+streamlit>=1.47
+pandas
+numpy
+rank-bm25
+anthropic
+# optional dense fusion (heavy, downloads a model): sentence-transformers

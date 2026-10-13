@@ -1,0 +1,58 @@
+sanskrit_term,english_gloss,other_glosses,variants,evidence_ids,status,note
+ahankara,consciousness,,ahankdra,12.20|12.22,fixed,"OCR d->a; ""of"" removed"
+aksha,terrestrial latitude,latitude,lamba|lambaka,3.14|4.24|5.1|10.6|12.44,fixed,"5.1 prints ""terrestrial latitude (aksha)"""
+angula,digit,digits|graduated divisions,,3.1|6.2|10.9|13.5,keep,singular
+apakrama,declination,,,2.6|2.58,fixed,"""of"" removed"
+asta,setting,heliacal setting,,10.1|14.17,keep,
+asura,demon,demons,,12.33|12.35,keep,singular
+avanati,parallax in latitude,,,5.1|5.10,keep,"5.1 and 5.10 print ""parallax in latitude (avanati)""; drop proposal was a matching miss"
+ayana,solstice,solstices|precession,,3.10|12.51|12.68|13.10|13.11|14.3,keep,Primary gloss is supported; cited contexts also use progress/precession.
+bhacakra,circle of asterisms,circle|asterisms,,2.46|14.15,fixed,Circle of asterisms; distinct from nakshatra (asterism).
+bhagana,revolution,circle of constellations|zodiac,,1.28|2.1|12.6|12.76|13.5,fixed,Verse 1.28 supports “revolution”; other cited verses use circle of asterisms/constellations.
+bhoga,portion,portions,,2.65|8.1|8.4|11.20,keep,
+bhuja,base,,,4.20|10.8,keep,
+brahman,divinity,sacred knowledge,,12.12|14.22|14.27,fixed,"""of"" removed; broadened sense rejected"
+chedyaka,projection,,,6.1|6.12,fixed,filler removed
+cighra,conjunction,conjunctions,gighra|qighra,1.29|2.36|2.50,keep,
+cighrocca,conjunction,conjunctions,,2.1|2.9|2.30,fixed,"Distinct technical term from cighra; the source lists conjunction (shighra), apsis (mandocca), and node (pata) separately."
+dhana,excess,additive,,2.5|2.9|2.38,fixed,filler removed
+dhruva,fixed,polar longitude|pole|pole-star,,2.67|8.1|12.43|12.71,fixed,"Context-dependent senses: fixed karanas (2.67), polar longitudes (8.1), pole-stars (12.43), pole (12.71)."
+ganku,gnomon,,canku,3.1|13.20,fixed,"OCR g for printed c-cedilla, same pattern as gighra/cighra; spelling to confirm"
+grasa,obscuration,,grdsa,4.20|5.13,fixed,"OCR d->a; ""of"" removed"
+guru,preceptor,master,,13.2|13.18|13.21,fixed,"13.18 prints ""preceptor (guru)"""
+hora,hour,hours,hord,12.6|12.79,fixed,OCR d->a
+kaksha,orbit,,kakshd,4.2|12.75,fixed,OCR d->a
+kendra,anomaly,distance|commutation,,2.29|2.40|2.53,keep,
+koti,perpendicular,,,2.29|4.18|4.23,keep,
+kranti,declination,,krdnti,1.68|13.12,fixed,OCR d->a
+kshitija,horizon,,,3.48|13.14,fixed,filler removed
+lagna,orient ecliptic-point,ecliptic|horizon|ecliptic-point,,3.48|3.51|5.3|5.4|5.5|7.7,keep,Ecliptic point on the horizon; distinct from kshitija (horizon).
+madhya,meridian,,,5.4|13.14,keep,
+mana,measure,measures|dimensions|measuring time|reckoning time,mdna,6.20|7.14|11.14|12.8|14.1|14.12,fixed,OCR d→a; English passages support measure and modes of measuring time.
+manda,apsis,,,1.41|2.50,keep,
+mandocca,apsis,apsides,,1.54|1.57|2.29|2.30,keep,
+manu,patriarch,patriarchs,,1.19|1.22,fixed,singular
+manvantara,patriarchate,,,1.18|14.21,fixed,OCR/typo
+nakshatra,asterism,asterisms,,7.1|7.11|14.15,keep,Asterism; distinct from bhacakra (circle of asterisms).
+pada,quadrant,fourth quarters,,2.29|8.5,fixed,"filler removed; ""quarter"" sense rejected"
+pata,node,aspect,pdta,1.33|11.4|11.7|11.9|11.14,fixed,"OCR d→a; 1.33 supports node; chapter 11 uses astronomical aspect, and 11.4 has compound-specific “fault”."
+pravaha,provector,,,11.3|12.73,keep,
+samagama,conjunction,,,7.1|7.3,keep,
+samasa,aggregate circle,circle,samdsa,6.3|6.6,fixed,"OCR d->a; 6.3 prints ""aggregate-circle"""
+sankranti,entrance into a sign,entrances|entrance,sankrdnti,14.3|14.8|14.9|14.11,fixed,"OCR d->a; 14.3 prints ""entrance into a sign (sankrdnti)"""
+saura,solar,,sdura,1.13|14.1|14.3,fixed,OCR d->a
+savana,civil,civil days,sdvana,14.1|14.18,fixed,OCR d->a
+siddha,perfected,,,12.27|12.31|12.40,fixed,OCR typo
+sphuta,corrected,true|precise,,2.38|4.2|4.19|6.1|7.14,fixed,"filler ""the"" removed"
+sthiti,duration,half-duration,,4.13|5.13|11.14,fixed,filler removed
+sura,god,gods,,12.41|14.20,keep,singular
+tamas,darkness,,,6.11|6.19,keep,
+ucca,apsis,own apices|apices|so-called apex,,1.33|1.58|2.3|2.4|2.5|12.87,keep,
+unnata,altitude,elevated|erect,,4.26|7.7|10.14,fixed,"""altitude time"" -> altitude"
+valana,deflection,,,4.25|5.13|6.2|6.4|6.5,keep,
+veda,scripture,,,12.21|12.27,fixed,OCR typo
+vikala,second,sixty seconds|seconds,vikald,1.28|7.10,fixed,"OCR d->a; ""sixty seconds"" was filler"
+vishuvat,equinox,equinoxes|equator,,13.10|13.15|14.3|14.7,fixed,"singular; context-dependent ""equator"" sense rejected (not in verse text)"
+yoga,conjunction,,,7.11|14.15|14.17,fixed,filler removed
+yuddha,encounter,,,7.1|7.19,keep,
+yuga,age,successive age,,1.56|13.18,fixed,"verses print ""Age (yuga)""; ""epoch"" unsupported"
