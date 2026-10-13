@@ -1,6 +1,7 @@
+# Light install (fits Render's 512 MB free tier): BM25 + concept lexicon + any hosted/local LLM over HTTP
 streamlit>=1.47
 pandas
 numpy
 rank-bm25
-anthropic
-# optional dense fusion (heavy, downloads a model): sentence-transformers
+requests
+indic-transliteration

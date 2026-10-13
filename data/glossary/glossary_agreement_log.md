@@ -50,8 +50,8 @@ The draft mapping types came from the shape of each glossary row (plural forms w
 | planetary_theory | 12 |
 | cosmology_philosophy | 11 |
 | spherical_astronomy | 11 |
-| calendrics | 7 |
 | eclipses_parallax | 7 |
+| calendrics | 7 |
 | units_measurement | 4 |
 | mathematics_geometry | 3 |
 | phenomena_visibility | 1 |

@@ -95,8 +95,8 @@ def main():
 
     F = pd.DataFrame(rows)
     frozen = f'{OUT}/glossary_{VERSION}_FROZEN.csv'
-    F.to_csv(frozen, index=False)
-    pd.DataFrame(attest).to_csv(f'{OUT}/glossary_attestation_check.csv', index=False)
+    F.to_csv(frozen, index=False, lineterminator='\n', encoding='utf-8')
+    pd.DataFrame(attest).to_csv(f'{OUT}/glossary_attestation_check.csv', index=False, lineterminator='\n', encoding='utf-8')
 
     # ---- agreement log
     ent = S.groupby('sanskrit_term').agg(n=('evidence_verse', 'size'), sup=('sheet_gloss_supported', lambda x: (x == 'Y').sum()))
@@ -149,14 +149,8 @@ def main():
     half = F.chapters.map(lambda c: int(c.split('|')[0])) <= 3
     L.append(f'- [ ] P1: entries whose first evidence chapter is 1–3 ({int(half.sum())} entries)')
     L.append(f'- [ ] P2: entries whose first evidence chapter is 4–14 ({int((~half).sum())} entries)')
-    # open(f'{OUT}/glossary_agreement_log.md', 'w').write('\n'.join(L) + '\n')
-    with open(
-    f'{OUT}/glossary_agreement_log.md',
-    'w',
-    encoding='utf-8'
-) as f:
-    f.write('\n'.join(L) + '\n')
-    
+    with open(f'{OUT}/glossary_agreement_log.md', 'w', encoding='utf-8', newline='\n') as f:
+        f.write('\n'.join(L) + '\n')
 
     man = dict(version=VERSION, frozen_file=os.path.basename(frozen), sha256=sha(frozen), entries=len(F),
                inputs={os.path.basename(p): sha(p) for p in [f'{GD}/ss_glossary_clean.csv', f'{GD}/glossary_meta_DRAFT.csv',
@@ -166,7 +160,7 @@ def main():
                               precheck_vs_reviewer_kappa=round(k_auto, 3)),
                review=dict(mapping_rule_vs_review_kappa=round(k_map, 3), confidence_overrides=int((F.confidence != F.confidence_rule).sum())),
                v1_1_flags=F.sanskrit_term[F.v1_1_flag == 'YES'].tolist())
-    json.dump(man, open(f'{OUT}/glossary_{VERSION}_manifest.json', 'w'), indent=1)
+    json.dump(man, open(f'{OUT}/glossary_{VERSION}_manifest.json', 'w', encoding='utf-8', newline='\n'), indent=1)
     print(json.dumps(man, indent=1))
 
 
